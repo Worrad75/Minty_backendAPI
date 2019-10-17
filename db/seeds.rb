@@ -18,6 +18,6 @@ puts "done making lists"
  
 item_a = BudgetItem.create!(name: "uhaul", price: 200, budget_list: list_a, paid_for: false)
 item_b = BudgetItem.create!(name: "curly fries", price: 5, budget_list: list_b, paid_for: false)
-item_c = BudgetItem.create!(name: "hiring a clown", price: 500, budget_list: list_c, paid_for: false)
+item_c = BudgetItem.create!(name: "a killer clown", price: 500, budget_list: list_c, paid_for: false)
 puts "done making items"
 
