@@ -40,7 +40,7 @@ class BudgetListsController < ApplicationController
     private
 
     def budget_list_params
-        params.require(:budget_list).permit(:title, :total_budget)
+        params.require(:budget_list).permit(:title, :total_budget, :user_id, :paid_for)
     end
 
 end
