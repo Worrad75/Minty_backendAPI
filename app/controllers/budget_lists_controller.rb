@@ -1,8 +1,16 @@
 class BudgetListsController < ApplicationController
 
     def index 
-        budget_lists = BudgetList.all
-        render json: budget_lists
+        budget_lists = BudgetList.all.map do |list|
+            {
+                id: list.id,
+                title: list.title,
+                user: list.user,
+                total_budget: list.total_budget,
+                items: list.budget_items
+            }
+        end
+        render json: budget_lists 
     end
 
     def create
